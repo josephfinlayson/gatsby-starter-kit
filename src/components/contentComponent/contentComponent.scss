@@ -1,0 +1,55 @@
+.was-ist-versichert {
+  width: 100%;
+  // max-width: 900px;
+  // background: rgb(249, 249, 249);
+
+  &-box {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+    padding: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px + 50px;
+
+    &__icon-container {
+      margin: auto 0;
+    }
+  }
+
+  &__content {
+    ul {
+      padding-left: 0;
+      // margin-bottom: 3em;
+      li {
+        padding-left: 35px;
+        margin-bottom: 1em;
+        margin-top: 0.5em;
+        list-style-type: none;
+        // background-repeat: no-repeat;
+        // background-position: left -3px;
+        // background-image: url("../img/tick.svg");
+      }
+      p {
+        margin-bottom: 5px;
+      }
+      .link__more-info {
+      }
+    }
+  }
+
+  &__content-extra-info-box {
+    margin-top: 15px;
+    background-color: rgba(254, 248, 244, 0.8);
+    border: solid 2px rgb(244, 226, 194);
+    // margin-bottom: $gutter_M;
+  }
+}
+.was-ist-versichert__content-extra__more-info {
+}
+
+.was-ist-versichert__mehr-erfahren {
+  margin-top: 2em;
+}
+
+.more-info-wrap {
+  display: block;
+  text-align: center;
+}
