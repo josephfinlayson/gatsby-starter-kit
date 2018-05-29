@@ -1,0 +1,69 @@
+@import 'index';
+
+.vorteile {
+  background-color: $color_white_background;
+
+  @include media-breakpoint-up(lg) {
+    background: linear-gradient(
+                    to bottom,
+                    rgba(255, 255, 255, 0) 0%,
+                    rgba(255, 255, 255, 1) 50%
+    );
+  }
+
+
+  padding: $gutter_L 0 $gutter_S;
+  text-align: center;
+  width: 100%;
+  &__moreinfo {
+    margin-top: $gutter_S;
+    margin-bottom: $gutter_S;
+    @include media-breakpoint-up(md) {
+      margin-top: $gutter_M;
+      margin-bottom: $gutter_M;
+    }
+  }
+
+  .row {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.vorteile-box {
+  text-align: center;
+  padding: 0 15%;
+  @include media-breakpoint-up(sm) {
+    padding: 0 25%;
+  }
+  // three thrids from here and bigger
+  @include media-breakpoint-up(md) {
+    padding: 0 10%;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 0 5%;
+  }
+  &__title {
+    font-size: inherit;
+    margin-bottom: 0;
+    margin-top: $gutter_XS;
+    @include media-breakpoint-up(md) {
+      margin-top: $gutter_S;
+    }
+  }
+  &__content {
+    hyphens: auto;
+    margin-bottom: $gutter_S;
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+  &__icon {
+    height: $gutter_M - 15;
+    @include media-breakpoint-up(md) {
+      height: $gutter_M;
+    }
+  }
+}
